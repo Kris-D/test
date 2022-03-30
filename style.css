@@ -56,78 +56,78 @@ button:hover {
   width: 100%;
   padding: 5px;
 }
-.modal .card h2{
-    margin-bottom: 1rem;
+.modal .card h2 {
+  margin-bottom: 1rem;
 }
-.modal .card form{
-    margin-top: 1rem;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    padding-right: 15px;
+.modal .card form {
+  margin-top: 1rem;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding-right: 15px;
 }
-.modal .card input[type="email"]{
-    background: #eee;
-    width: 100%;
-    padding: 1rem;
-    outline: none;
+.modal .card input[type="email"] {
+  background: #eee;
+  width: 100%;
+  padding: 1rem;
+  outline: none;
 }
-.modal .card input[type="submit"]{
-background: #f24438;
-color: white;
-padding: 0 1.6rem;
-cursor: pointer;
+.modal .card input[type="submit"] {
+  background: #f24438;
+  color: white;
+  padding: 0 1.6rem;
+  cursor: pointer;
 }
 /* open modal */
-@keyframes openModal{
-  from{
+@keyframes openModal {
+  from {
     opacity: 0;
   }
-  to{
+  to {
     opacity: 1;
   }
 }
 /* close modal */
-@keyframes closeModal{
-  from{
+@keyframes closeModal {
+  from {
     opacity: 1;
   }
-  to{
+  to {
     opacity: 0;
   }
 }
-.close-modal-animation{
+.close-modal-animation {
   animation: closeModal 500ms linear forwards;
 }
 
 /* ========= Media Queries ========== */
 
-@media screen and (max-width:800px) {
-  .modal .card{
-      flex-direction: column;
-      width: 80vw;
-      text-align: center;
-  }  
-  .modal .card .brand{
-      width: 15rem;
-      height: 15rem;
-      border-radius: 50%;
-      overflow: hidden;
-      margin-top: 3rem;
+@media screen and (max-width: 800px) {
+  .modal .card {
+    flex-direction: column;
+    width: 80vw;
+    text-align: center;
   }
-  .modal .card form{
-      display: block;
-      padding: 1rem;
-      position: relative;
+  .modal .card .brand {
+    width: 15rem;
+    height: 15rem;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-top: 3rem;
+  }
+  .modal .card form {
+    display: block;
+    padding: 1rem;
+    position: relative;
   }
   .modal .card form input[type="email"],
-  .modal .card form input[type="email"]::placeholder{
-      text-align: center;
+  .modal .card form input[type="email"]::placeholder {
+    text-align: center;
   }
-  .modal .card form input[type="submit"]{
-display: block;
-width: 100%;
-padding: 1rem 0;
-margin-top: 0.6rem;
+  .modal .card form input[type="submit"] {
+    display: block;
+    width: 100%;
+    padding: 1rem 0;
+    margin-top: 0.6rem;
   }
 }
