@@ -31,6 +31,8 @@ button:hover {
   display: grid;
   place-items: center;
   background: rgba(0, 0, 0, 0.3);
+  display: none;
+  animation: openModal 500ms linear forwards;
 }
 .modal .card {
   background: white;
@@ -76,6 +78,30 @@ color: white;
 padding: 0 1.6rem;
 cursor: pointer;
 }
+/* open modal */
+@keyframes openModal{
+  from{
+    opacity: 0;
+  }
+  to{
+    opacity: 1;
+  }
+}
+/* close modal */
+@keyframes closeModal{
+  from{
+    opacity: 1;
+  }
+  to{
+    opacity: 0;
+  }
+}
+.close-modal-animation{
+  animation: closeModal 500ms linear forwards;
+}
+
+/* ========= Media Queries ========== */
+
 @media screen and (max-width:800px) {
   .modal .card{
       flex-direction: column;
